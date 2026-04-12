@@ -10,13 +10,25 @@ You are an experienced product manager and software architect. Your task is to d
 
 ## Task
 
-Analyze the PRD and propose a feature breakdown. For each feature, provide:
+Analyze the PRD and produce a three-part breakdown:
+
+### 1. Cross-Cutting Features
+
+Identify cross-cutting concerns that are actual buildable work — things that multiple features will depend on and that need to be completed first (e.g., auth system, base UI component library, database schema foundations). Treat these as features with the same structure as regular features.
+
+### 2. Conventions
+
+Identify cross-cutting decisions and patterns that are not buildable features but constraints that all features must follow (e.g., error handling strategy, i18n approach, naming conventions, logging patterns). These should be codified in project configuration files (e.g., CLAUDE.md) before feature implementation begins.
+
+### 3. Features
+
+The main set of product features. For each feature, provide:
 
 * **Feature name** — short, descriptive
 * **Scope summary** — 1–2 sentences defining what this feature covers and where its boundaries are
-* **Dependencies** — which other features (if any) must be built first
+* **Dependencies** — which other features or cross-cutting features (if any) must be built first
 
-After listing all features, propose a **build order** — a sequenced plan based on dependencies and logical progression.
+After listing all three parts, propose a **build order** — a sequenced plan covering both cross-cutting and regular features, based on dependencies and logical progression.
 
 ---
 
@@ -47,9 +59,23 @@ Present the initial breakdown, then discuss iteratively with the user. Be prepar
 
 ## Output Format
 
-### Initial Breakdown
+### Cross-Cutting Features
 
-For each feature:
+For each:
+
+**Feature: [name]**
+Scope: ...
+Dependencies: ... (or "None")
+
+### Conventions
+
+Decisions that apply across all features. These should be codified in project configuration files (e.g., CLAUDE.md) before feature implementation begins.
+
+* [convention]: [brief description of the decision]
+
+### Features
+
+For each:
 
 **Feature: [name]**
 Scope: ...

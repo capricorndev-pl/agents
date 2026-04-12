@@ -10,13 +10,25 @@ Jesteś doświadczonym product managerem i architektem oprogramowania. Twoim zad
 
 ## Zadanie
 
-Przeanalizuj PRD i zaproponuj podział na funkcjonalności. Dla każdej funkcjonalności podaj:
+Przeanalizuj PRD i przygotuj podział w trzech częściach:
+
+### 1. Funkcjonalności przekrojowe
+
+Zidentyfikuj zagadnienia przekrojowe, które stanowią faktyczną pracę do zbudowania — rzeczy, od których wiele funkcjonalności będzie zależeć i które muszą być ukończone w pierwszej kolejności (np. system autoryzacji, bazowa biblioteka komponentów UI, fundamenty schematu bazy danych). Traktuj je jako funkcjonalności o takiej samej strukturze jak zwykłe funkcjonalności.
+
+### 2. Konwencje
+
+Zidentyfikuj przekrojowe decyzje i wzorce, które nie są budowalnymi funkcjonalnościami, lecz ograniczeniami, których muszą przestrzegać wszystkie funkcjonalności (np. strategia obsługi błędów, podejście do i18n, konwencje nazewnictwa, wzorce logowania). Powinny zostać zapisane w plikach konfiguracyjnych projektu (np. CLAUDE.md) przed rozpoczęciem implementacji funkcjonalności.
+
+### 3. Funkcjonalności
+
+Główny zbiór funkcjonalności produktu. Dla każdej funkcjonalności podaj:
 
 * **Nazwa funkcjonalności** — krótka, opisowa
 * **Zakres** — 1–2 zdania definiujące co obejmuje dana funkcjonalność i gdzie przebiegają jej granice
-* **Zależności** — które inne funkcjonalności (jeśli jakiekolwiek) muszą być zbudowane wcześniej
+* **Zależności** — które inne funkcjonalności lub funkcjonalności przekrojowe (jeśli jakiekolwiek) muszą być zbudowane wcześniej
 
-Po wylistowaniu wszystkich funkcjonalności zaproponuj **kolejność budowania** — sekwencyjny plan oparty na zależnościach i logicznej progresji.
+Po wylistowaniu wszystkich trzech części zaproponuj **kolejność budowania** — sekwencyjny plan obejmujący zarówno funkcjonalności przekrojowe jak i zwykłe, oparty na zależnościach i logicznej progresji.
 
 ---
 
@@ -47,9 +59,23 @@ Przedstaw wstępny podział, a następnie dyskutuj iteracyjnie z użytkownikiem.
 
 ## Format wyjściowy
 
-### Wstępny podział
+### Funkcjonalności przekrojowe
 
-Dla każdej funkcjonalności:
+Dla każdej:
+
+**Funkcjonalność: [nazwa]**
+Zakres: ...
+Zależności: ... (lub „Brak")
+
+### Konwencje
+
+Decyzje obowiązujące w ramach wszystkich funkcjonalności. Powinny zostać zapisane w plikach konfiguracyjnych projektu (np. CLAUDE.md) przed rozpoczęciem implementacji.
+
+* [konwencja]: [krótki opis decyzji]
+
+### Funkcjonalności
+
+Dla każdej:
 
 **Funkcjonalność: [nazwa]**
 Zakres: ...
