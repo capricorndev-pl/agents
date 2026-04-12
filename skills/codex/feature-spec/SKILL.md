@@ -28,9 +28,11 @@ If either file is missing, stop and tell the user exactly which document is unav
 
 ## Confirm The Feature
 
-Ask which feature from the feature map should be specified unless the user has already named it.
+Ask which feature should be specified unless the user has already named it.
 
-If the user provides a feature name, verify it matches the feature map before drafting. If the name is ambiguous or only partially matches, ask for confirmation instead of guessing.
+If the feature matches an entry in the feature map, use that entry's scope and dependencies as a starting point.
+
+If the feature is not in the feature map, proceed using the PRD as the primary source. Use the feature map for context about adjacent features and shared conventions, but tell the user that this feature is not currently represented in the map and confirm before proceeding.
 
 Respect any conventions defined in the feature map. Reference them where relevant, but do not redefine them inside the feature spec.
 

@@ -18,9 +18,7 @@ If either file is missing, inform the user and ask how to proceed. Do not guess 
 
 ## Step 2. Understand the feature
 
-Ask the user which feature from the feature map they want to spec. If the user has already specified a feature name, confirm it matches an entry in the feature map.
-
-Respect any conventions defined in the feature map — reference them where relevant but do not redefine them in the spec.
+Ask the user which feature they want to spec. If the feature matches an entry in the feature map, use that entry's scope and dependencies as a starting point. If the feature is not in the feature map, proceed using the PRD as the primary source — use the feature map for context about existing features and conventions, but note to the user that this feature is not part of the current map and confirm before proceeding.
 
 ## Step 3. Clarify before drafting
 

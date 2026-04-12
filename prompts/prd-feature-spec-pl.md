@@ -41,7 +41,7 @@ Uwzględniaj kontekst techniczny tam, gdzie bezpośrednio wpływa na zakres lub 
 
 ## Zasady
 
-* opieraj specyfikację wyłącznie na PRD i mapie funkcjonalności — nie wymyślaj wymagań wykraczających poza określony zakres
+* * opieraj specyfikację na PRD i mapie funkcjonalności — jeśli żądana funkcjonalność nie znajduje się w mapie, użyj PRD jako głównego źródła, a mapy funkcjonalności jako kontekstu dla granic. Nie wymyślaj wymagań wykraczających poza określony zakres produktu.
 * utrzymuj specyfikację skupioną wyłącznie na tej funkcjonalności — nie opisuj zachowań należących do innych funkcjonalności z mapy
 * bądź konkretny i precyzyjny — unikaj niejasnego języka, na podstawie którego nie da się implementować
 * użyj sekcji Poza zakresem aby wyraźnie wskazać rzeczy, które mogłyby być uznane za część tej funkcjonalności, ale nią nie są

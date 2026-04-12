@@ -41,7 +41,7 @@ Include technical context where it directly affects scope or behavior — data m
 
 ## Rules
 
-* base the spec strictly on the PRD and feature map — do not invent requirements beyond the stated scope
+* * base the spec on the PRD and feature map — if the requested feature is not in the feature map, use the PRD as the primary source and the feature map for boundary context. Do not invent requirements beyond the stated product scope.
 * keep the spec focused on this feature only — do not describe behaviour that belongs to other features in the feature map
 * be concrete and specific — avoid vague language that cannot be implemented against
 * use the Out of Scope section to explicitly call out things that might be assumed to be part of this feature but are not
