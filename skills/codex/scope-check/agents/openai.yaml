@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scope Check"
+  short_description: "Check change scope against product docs"
+  default_prompt: "Use $scope-check to assess whether this requested change aligns with the PRD, feature map, and relevant feature spec."
