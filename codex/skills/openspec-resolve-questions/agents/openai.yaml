@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenSpec Resolve Questions"
+  short_description: "Resolve OpenSpec design questions"
+  default_prompt: "Use $openspec-resolve-questions to identify unresolved questions in an OpenSpec change and turn them into explicit decisions or assumptions before implementation."
