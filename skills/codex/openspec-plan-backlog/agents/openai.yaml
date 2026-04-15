@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenSpec Plan Backlog"
+  short_description: "Shape an OpenSpec proposal backlog"
+  default_prompt: "Use $openspec-plan-backlog to analyze existing specs, docs, code, and active changes, then propose a prioritized backlog of OpenSpec changes grouped into coherent implementation units."

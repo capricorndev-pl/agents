@@ -1,4 +1,0 @@
-interface:
-  display_name: "Slice Feature"
-  short_description: "Break a feature spec into vertical slices"
-  default_prompt: "Use $slice-feature to propose small vertical implementation slices from this feature spec and recommend the best next slice."
