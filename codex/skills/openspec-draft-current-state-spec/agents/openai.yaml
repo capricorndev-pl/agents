@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenSpec Current State"
+  short_description: "Draft current-state OpenSpec specs"
+  default_prompt: "Use $openspec-draft-current-state-spec to draft or update an OpenSpec spec from current app behavior and supporting docs."

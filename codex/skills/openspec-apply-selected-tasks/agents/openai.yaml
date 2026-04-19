@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenSpec Apply Selected Tasks"
+  short_description: "Implement only a chosen subset of OpenSpec tasks"
+  default_prompt: "Use $openspec-apply-selected-tasks when I want only specific OpenSpec tasks implemented, for example 'implement tasks 1.1 and 1.2 from practitioner-layout-variants'."
